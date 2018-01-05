@@ -1,0 +1,1 @@
+p BasicObject.instance_methods
