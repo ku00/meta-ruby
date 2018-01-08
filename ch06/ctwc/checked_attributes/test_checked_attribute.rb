@@ -2,9 +2,14 @@ require 'test/unit'
 # require_relative 'eval'
 # require_relative 'no_eval'
 # require_relative 'block'
-require_relative 'macro'
+# require_relative 'macro'
+require_relative 'module'
 
 class Person
+  # For module.rb
+  include CheckedAttributes
+
+  # For macro.rb, module.rb
   attr_checked :age do |v|
     v >= 18
   end
